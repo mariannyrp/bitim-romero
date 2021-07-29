@@ -1,0 +1,165 @@
+@import "../variables/colores";
+// seccion contacto
+.section {
+  .section__sectionContact {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 6em;
+    img {
+      animation: sectionContact__img--animation 2s linear;
+      animation-delay: 0s;
+      margin-top: -2.5em;
+    }
+    div {
+      margin-top: 2em;
+      .form {
+        display: flex;
+        flex-direction: column;
+        font-family: "Quicksand";
+        font-size: 1.3rem;
+        label {
+          margin-top: 1em;
+          input {
+            font-family: "Quicksand";
+            font-size: 1rem;
+            display: block;
+            margin-top: 0.8em;
+            border-radius: 1em;
+            height: 2em;
+            border: transparent;
+            width: 100%;
+            padding: 0.1em 1em;
+            transition: width 0.5s;
+            &:hover {
+              background-color: #ecf4fe;
+              transition: color 2s, background-color 0.5s;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        h2 {
+          margin-top: 1em;
+        }
+        select {
+          font-family: "Quicksand";
+          font-size: 1rem;
+          display: block;
+          margin-top: 0.8em;
+          border-radius: 0.3em;
+          height: 2em;
+          border: transparent;
+          width: 9em;
+          background-color: $colorPrimary;
+          color: #fff;
+          padding: 0.2em;
+          font-weight: bold;
+          outline: none;
+          &:hover {
+            background-color: $colorPrimaryDark;
+            color: #fff;
+            transition: color 2s, background-color 0.5s;
+            outline: none;
+          }
+          option {
+            font-family: "Quicksand";
+            font-size: 1rem;
+          }
+        }
+        .formButtons {
+          display: flex;
+          justify-content: space-evenly;
+          margin: 2em 1em;
+          .buttonForm {
+            font-size: 1.2rem;
+            color: $colorSecondary;
+            background-color: $colorPrimaryDark;
+            border-radius: 3em;
+            border-color: transparent;
+            height: 2em;
+            width: 6em;
+            &:hover {
+              background-color: $colorSecondary;
+              color: $colorPrimaryDark;
+              transition: color 2s, background-color 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes sectionContact__img--animation {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+// medias queries
+
+@media only screen and (max-width: 768px) {
+  .section {
+    .section__sectionContact {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      align-items: center;
+      img {
+        animation: none;
+        height: 23em;
+        width: 21em;
+      }
+      div {
+        margin: 0;
+        .form {
+          width: 100vw;
+          label {
+            input {
+              width: 21em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section {
+    .section__sectionContact {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      align-items: center;
+      img {
+        animation: none;
+        height: 23em;
+        width: 21em;
+      }
+      div {
+        margin: 0;
+        .form {
+          width: 100vw;
+          label {
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .body {
+    height: 0;
+  }
+}

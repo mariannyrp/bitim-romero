@@ -1,0 +1,63 @@
+@import "../variables/colores";
+@import "animations.scss";
+.ourProjects {
+  text-align: center;
+  padding: 4em 3em 0 3em;
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 4em;
+    .project {
+      font-family: "Quicksand";
+      font-size: 1.5rem;
+      background-size: contain;
+      color: #fff;
+      margin-bottom: 2em;
+      border-radius: 0.3em;
+      height: 12em;
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 110, 200, 0.9));
+    }
+    img {
+      &:hover {
+        opacity: 0.3;
+      }
+    }
+    h2 {
+      color: #fff;
+      font-family: "Quicksand";
+    }
+    .buttonProject {
+      width: 12em;
+      height: 2.5em;
+    }
+  }
+}
+.customers {
+  text-align: center;
+  padding: 6em 3em 6em 3em;
+  h2 {
+    font-family: "Quicksand";
+    font-size: 1.5rem;
+    padding-bottom: 2.5em;
+  }
+  .customer {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      transition: animation 5s;
+      li {
+        margin-bottom: 2em;
+        a {
+          .customerLogo {
+            &:hover {
+              opacity: 0.5;
+              animation: animate__pulse 5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

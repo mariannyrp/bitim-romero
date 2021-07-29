@@ -1,0 +1,140 @@
+.footer {
+  background-color: #cfd7f2;
+  grid-area: footer;
+  height: 10em;
+  .sectionFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .footerBitimSpa {
+      font-size: 1.1rem;
+      color: #8692dd;
+      padding: 0.5em;
+      h3 {
+        font-size: 1.1rem;
+        color: #8692dd;
+        padding: 0.5em;
+      }
+    }
+    .footerLogo {
+      font-size: 1.1rem;
+      color: #8692dd;
+      padding: 0.5em;
+      a {
+        img {
+          position: relative;
+          left: 4.5em;
+          animation-iteration-count: infinite;
+          animation-duration: 5s;
+          animation-timing-function: ease-in;
+        }
+      }
+      h3 {
+        font-size: 1.1rem;
+        color: #8692dd;
+        padding: 0.5em;
+      }
+    }
+    .footerSocial {
+      font-size: 1.1rem;
+      color: #8692dd;
+      padding: 0.5em;
+      h3 {
+        font-size: 1.1rem;
+        color: #8692dd;
+        padding: 0.5em;
+      }
+      .socialMedia {
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            .iconSocial {
+              opacity: 0.6;
+              &:hover {
+                width: 2.7em;
+                height: 2.7em;
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+    .sectionFooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .footerBitimSpa {
+        margin: 1em;
+        order: 2;
+        h3 {
+          display: inline;
+        }
+      }
+      .footerLogo {
+        margin: 1em;
+      }
+      .footerSocial {
+        margin: 1em;
+        h3 {
+          display: none;
+        }
+        .socialMedia {
+          display: flex;
+          justify-content: space-between;
+          li {
+            a {
+              padding: 2.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer {
+    height: auto;
+    .sectionFooter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .footerBitimSpa {
+        margin: 1em;
+        order: 2;
+        h3 {
+          display: inline;
+        }
+      }
+      .footerLogo {
+        margin: 1em;
+      }
+      .footerSocial {
+        margin: 1em;
+        h3 {
+          display: none;
+        }
+        .socialMedia {
+          display: flex;
+          justify-content: space-between;
+          li {
+            a {
+              padding: 2.3em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../parciales/variables/colores";
+html {
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  height: 100vh;
+}
+.section {
+  grid-area: section;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 90, 200, 0.3));
+}
+.subtitle {
+  font-size: 2rem;
+  display: inline;
+  font-weight: bold;
+}
+.paragraph {
+  line-height: 2.5rem;
+  font-size: 1.1rem;
+  font-family: "Quicksand";
+}
+.buttonMore {
+  font-size: 1rem;
+  border-radius: 1em;
+  border-color: transparent;
+  height: 2.5em;
+  width: 5.5em;
+  position: relative;
+  &:hover {
+    background-color: $colorSecondary;
+    color: $colorPrimaryDark;
+    transition: color 2s, background-color 0.5s;
+  }
+}

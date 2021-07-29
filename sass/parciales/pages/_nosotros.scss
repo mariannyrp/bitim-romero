@@ -1,0 +1,86 @@
+// seccion nosotros
+.section__usWe {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3em;
+  margin: 4em 3em 0 3em;
+  div {
+    p {
+      padding-top: 1em;
+    }
+    h2 {
+      margin-top: 1em;
+      font-family: "Quicksand";
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    h3 {
+      font-family: "Quicksand";
+      font-size: 1.1rem;
+      margin-top: 2em;
+      color: #fff;
+    }
+  }
+}
+.section__team {
+  margin: 6em 3em 6em 3em;
+  .team__employees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 3em;
+    margin-left: -2em;
+    align-content: space-around;
+    .employees__item {
+      display: flex;
+      border: #fff solid;
+      border-radius: 0.5em;
+      margin-bottom: 2em;
+      margin-right: 0.8em;
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transition: background 1s;
+      }
+      .employees__info {
+        font-family: "Roboto";
+        font-size: 1rem;
+        line-height: 2em;
+        padding: 1.5em;
+        .info__socialEmployee {
+          display: flex;
+          li {
+            a {
+              img {
+                &:hover {
+                  opacity: 0.5;
+                }
+              }
+            }
+          }
+        }
+        h3 {
+          font-family: "Quicksand";
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+// media queries
+
+@media only screen and (max-width: 768px) {
+  .section__usWe {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 4em 3em 0 3em;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

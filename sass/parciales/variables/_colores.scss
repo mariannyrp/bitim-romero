@@ -1,0 +1,22 @@
+$colorPrimary: #8692dd;
+$colorPrimaryDark: #17194f;
+$colorPrimaryLight: #cfd7f2;
+$colorSecondary: #f0f1f9;
+
+// desafío complementario - mapa, each, bucle aplicado solo a _general.scss
+
+$colores: (
+  "Primary": $colorPrimary,
+  "PrimaryDark": $colorPrimaryDark,
+  "PrimaryLight": $colorPrimaryLight,
+  "Secundary": $colorSecondary,
+);
+
+@each $colorKey, $colorValue in $colores {
+  .color#{$colorKey} {
+    color: $colorValue;
+  }
+  .backgroundColor#{$colorKey} {
+    background-color: $colorValue;
+  }
+}

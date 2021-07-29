@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:5000/index.html</loc>
+    <lastmod>2021-07-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5000/pages/que-ofrecemos.html</loc>
+    <lastmod>2021-07-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5000/pages/nosotros.html</loc>
+    <lastmod>2021-07-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5000/pages/contacto.html</loc>
+    <lastmod>2021-07-29</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:5000/pages/proyectos.html</loc>
+    <lastmod>2021-07-29</lastmod>
+  </url>
+</urlset>
