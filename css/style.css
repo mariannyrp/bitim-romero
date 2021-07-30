@@ -542,28 +542,38 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 4em; }
+    margin-top: 3em; }
     .ourProjects .projects .project {
       font-family: "Quicksand";
-      font-size: 1.5rem;
+      font-size: 1.1em;
       background-size: contain;
       color: #fff;
-      margin-bottom: 2em;
-      border-radius: 0.3em;
-      height: 12em;
-      background: linear-gradient(rgba(0, 0, 0, 0), rgba(94, 110, 200, 0.9)); }
-    .ourProjects .projects img:hover {
-      opacity: 0.3; }
-    .ourProjects .projects h2 {
-      color: #fff;
-      font-family: "Quicksand"; }
-    .ourProjects .projects .buttonProject {
-      width: 12em;
-      height: 2.5em; }
+      border-radius: 0.3em; }
+      .ourProjects .projects .project img {
+        opacity: 0.8; }
+        .ourProjects .projects .project img:hover {
+          opacity: 1; }
+      .ourProjects .projects .project div {
+        position: relative;
+        top: -5em;
+        display: inline; }
+        .ourProjects .projects .project div h2 {
+          font-family: "Roboto";
+          font-weight: bold; }
+      .ourProjects .projects .project .buttonProject {
+        width: 11em;
+        height: 2.3em;
+        margin-top: 0.3em; }
+        .ourProjects .projects .project .buttonProject:hover {
+          background-color: #ffff; }
 
 .customers {
   text-align: center;
-  padding: 6em 3em 6em 3em; }
+  background-color: #f0f1f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15em; }
   .customers h2 {
     font-family: "Quicksand";
     font-size: 1.5rem;
