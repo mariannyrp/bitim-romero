@@ -13,7 +13,7 @@
       margin-top: 1em;
       font-family: "Quicksand";
       font-weight: bold;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       text-align: center;
     }
     h3 {
@@ -39,6 +39,7 @@
       border-radius: 0.5em;
       margin-bottom: 2em;
       margin-right: 0.8em;
+      width: 30em;
       &:hover {
         background: rgba(255, 255, 255, 0.2);
         transition: background 1s;
@@ -72,6 +73,20 @@
 // media queries
 
 @media only screen and (max-width: 768px) {
+  .section__usWe {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin: 4em 3em 0 3em;
+    text-align: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .section__usWe {
     display: flex;
     flex-direction: column;
