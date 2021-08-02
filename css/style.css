@@ -377,24 +377,34 @@ html {
     color: #fff; }
 
 .section__team {
-  margin: 6em 3em 6em 3em; }
+  margin: 6em 3em 6em 3em;
+  background-color: rgba(248, 249, 250, 0.7);
+  padding: 2em;
+  border-radius: 1.5em; }
   .section__team .team__employees {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 3em;
-    margin-left: -2em;
     align-content: space-around; }
     .section__team .team__employees .employees__item {
       display: flex;
-      border: #fff solid;
+      justify-content: center;
+      align-items: center;
       border-radius: 0.5em;
       margin-bottom: 2em;
       margin-right: 0.8em;
-      width: 30em; }
+      height: 12em;
+      width: 25em; }
       .section__team .team__employees .employees__item:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transition: background 1s; }
+        background: rgba(255, 255, 255, 0.4);
+        transition: background 1s;
+        height: 13em;
+        width: 26em; }
+      .section__team .team__employees .employees__item .item__img {
+        border-radius: 50%;
+        max-width: 12rem;
+        box-shadow: 0px 5px 5px 0px #adb5bd; }
       .section__team .team__employees .employees__item .employees__info {
         font-family: "Roboto";
         font-size: 1rem;
@@ -417,7 +427,10 @@ html {
     text-align: center; }
     .section__usWe img {
       width: 100%;
-      height: auto; } }
+      height: auto; }
+  .section__team .team__employees {
+    display: flex;
+    justify-content: center; } }
 
 @media only screen and (max-width: 992px) {
   .section__usWe {
@@ -428,7 +441,10 @@ html {
     text-align: center; }
     .section__usWe img {
       width: 100%;
-      height: auto; } }
+      height: auto; }
+  .section__team .team__employees {
+    display: flex;
+    justify-content: center; } }
 
 .colorPrimary {
   color: #8692dd; }
