@@ -40,47 +40,56 @@
       justify-content: center;
       align-items: center;
       border-radius: 0.5em;
-      margin-bottom: 2em;
+      background: rgba(255, 255, 255, 0.2);
+      margin-bottom: 3.5em;
       margin-right: 0.8em;
-      height: 12em;
-      width: 25em;
+      height: 14em;
+      width: auto;
+      box-shadow: 0 0.15rem 1.75rem 0 #adb5bd30;
+      animation: employees__item--animation 2s;
       &:hover {
-        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0.15rem 1.75rem 0 #adb5bd;
+        background: rgba(255, 255, 255, 0.6);
         transition: background 1s;
-        height: 13em;
-        width: 26em;
+        transform: translateY(-0.3333333333rem);
       }
-      .item__img {
-        border-radius: 50%;
-        max-width: 12rem;
-        box-shadow: 0px 5px 5px 0px #adb5bd;
-      }
-      .employees__info {
-        font-family: "Roboto";
-        font-size: 1rem;
-        line-height: 2em;
-        padding: 1.5em;
-        .info__socialEmployee {
-          display: flex;
-          li {
-            a {
-              img {
-                &:hover {
-                  opacity: 0.5;
-                }
-              }
+    }
+  }
+  .item__img {
+    border-radius: 50%;
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+    margin-left: 1.5em;
+  }
+  .employees__info {
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 2em;
+    padding: 1.5em;
+    .info__socialEmployee {
+      display: flex;
+      li {
+        a {
+          img {
+            &:hover {
+              opacity: 0.5;
             }
           }
         }
-        h3 {
-          font-family: "Quicksand";
-          font-size: 1.5rem;
-        }
       }
+    }
+    h3 {
+      font-family: "Quicksand";
+      font-size: 1.5rem;
     }
   }
 }
 
+@keyframes employees__item--animation {
+  0% {
+    transform: translateY(-0.3333333333rem);
+  }
+}
 // media queries
 
 @media only screen and (max-width: 768px) {
@@ -103,7 +112,7 @@
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .section__usWe {
     display: flex;
     flex-direction: column;

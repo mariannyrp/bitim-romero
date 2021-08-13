@@ -349,7 +349,7 @@ html {
     font-size: 1.2rem;
     padding: 1em; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .sectionTitleBitim div h2 {
     font-size: 1.4rem; }
   .sectionTitleBitim div p {
@@ -392,31 +392,39 @@ html {
       justify-content: center;
       align-items: center;
       border-radius: 0.5em;
-      margin-bottom: 2em;
+      background: rgba(255, 255, 255, 0.2);
+      margin-bottom: 3.5em;
       margin-right: 0.8em;
-      height: 12em;
-      width: 25em; }
+      height: 14em;
+      width: auto;
+      box-shadow: 0 0.15rem 1.75rem 0 #adb5bd30;
+      animation: employees__item--animation 2s; }
       .section__team .team__employees .employees__item:hover {
-        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0.15rem 1.75rem 0 #adb5bd;
+        background: rgba(255, 255, 255, 0.6);
         transition: background 1s;
-        height: 13em;
-        width: 26em; }
-      .section__team .team__employees .employees__item .item__img {
-        border-radius: 50%;
-        max-width: 12rem;
-        box-shadow: 0px 5px 5px 0px #adb5bd; }
-      .section__team .team__employees .employees__item .employees__info {
-        font-family: "Roboto";
-        font-size: 1rem;
-        line-height: 2em;
-        padding: 1.5em; }
-        .section__team .team__employees .employees__item .employees__info .info__socialEmployee {
-          display: flex; }
-          .section__team .team__employees .employees__item .employees__info .info__socialEmployee li a img:hover {
-            opacity: 0.5; }
-        .section__team .team__employees .employees__item .employees__info h3 {
-          font-family: "Quicksand";
-          font-size: 1.5rem; }
+        transform: translateY(-0.33333rem); }
+  .section__team .item__img {
+    border-radius: 50%;
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+    margin-left: 1.5em; }
+  .section__team .employees__info {
+    font-family: "Roboto";
+    font-size: 1rem;
+    line-height: 2em;
+    padding: 1.5em; }
+    .section__team .employees__info .info__socialEmployee {
+      display: flex; }
+      .section__team .employees__info .info__socialEmployee li a img:hover {
+        opacity: 0.5; }
+    .section__team .employees__info h3 {
+      font-family: "Quicksand";
+      font-size: 1.5rem; }
+
+@keyframes employees__item--animation {
+  0% {
+    transform: translateY(-0.33333rem); } }
 
 @media only screen and (max-width: 768px) {
   .section__usWe {
@@ -432,7 +440,7 @@ html {
     display: flex;
     justify-content: center; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .section__usWe {
     display: flex;
     flex-direction: column;
@@ -478,10 +486,12 @@ html {
   margin: 4em 3em 0 3em; }
   .whatWeOffer div {
     border: 0.1em solid;
-    border-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.05);
     border-radius: 0.4em;
     padding: 2em;
-    background-color: rgba(228, 228, 228, 0.4); }
+    box-shadow: 0 0.15rem 1.75rem 0 #fff; }
+    .whatWeOffer div:hover {
+      background-color: rgba(170, 156, 156, 0.8); }
     .whatWeOffer div p {
       padding-top: 1em; }
 
@@ -513,6 +523,17 @@ html {
   color: #8692dd; }
 
 @media only screen and (max-width: 768px) {
+  .carousel-inner {
+    height: 100%; }
+  .carousel-item h5 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+  .carousel-item p {
+    font-size: 0.9em;
+    font-weight: bold; } }
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .carousel-inner {
     height: 100%; }
   .carousel-item h5 {
@@ -627,7 +648,7 @@ html {
     display: flex;
     flex-direction: column; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .customers h2 {
     font-size: 1.3rem; }
   .customer ul {
@@ -757,7 +778,7 @@ html {
         .section .section__sectionContact div .form label input {
           width: 21em; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .section .section__sectionContact {
     display: flex;
     flex-direction: column;
@@ -852,7 +873,7 @@ html {
           .footer .sectionFooter .footerSocial .socialMedia li a {
             padding: 2.3em; } }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .footer {
     height: auto; }
     .footer .sectionFooter {
