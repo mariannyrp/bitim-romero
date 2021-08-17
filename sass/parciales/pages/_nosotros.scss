@@ -119,6 +119,10 @@
     .team__employees {
       display: flex;
       justify-content: center;
+      .employees__item {
+        margin-right: 0;
+        width: 96%;
+      }
     }
   }
 }
