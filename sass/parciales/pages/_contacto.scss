@@ -118,15 +118,17 @@
       div {
         margin: 0;
         .form {
-          width: 100vw;
           label {
             input {
-              width: 21em;
+              width: 100vw;
             }
           }
         }
       }
     }
+  }
+  .formButtons {
+    margin-top: 2em;
   }
 }
 
@@ -146,10 +148,9 @@
       div {
         margin: 0;
         .form {
-          width: 100vw;
           label {
             input {
-              width: 100%;
+              width: 100vw;
             }
           }
         }

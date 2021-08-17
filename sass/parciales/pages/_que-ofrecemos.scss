@@ -1,22 +1,53 @@
 @import "../variables/colores";
+@import "../animations";
 .whatWeOffer {
-  display: grid;
-  grid-gap: 3em;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 4em 3em 0 3em;
-  div {
+  .whatWeOfferBitim {
     border: 0.1em solid;
     border-color: rgba(255, 255, 255, 0.05);
     border-radius: 0.4em;
     padding: 2em;
-    box-shadow: 0 0.15rem 1.75rem 0 #fff;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(255, 255, 255, 0.3);
+    animation: translateY--animation 2s;
     &:hover {
-      background-color: rgba(170, 156, 156, 0.8);
+      background: rgba(255, 255, 255, 0.3);
+      transition: background 1s, transform 3s;
+      transform: translateY(-0.3333333333rem);
     }
     p {
       padding-top: 1em;
     }
+  }
+}
+.misionBitim {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3em;
+  .misionBitimText {
+    margin-top: 3em;
+    border: 0.1em solid;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.4em;
+    padding: 2em;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(255, 255, 255, 0.3);
+    animation: translateY--animation 2s;
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transition: background 1s, transform 3s;
+      transform: translateY(-0.3333333333rem);
+    }
+    p {
+      padding-top: 1em;
+    }
+  }
+  img {
+    height: auto;
+    width: auto;
+    padding-top: 4em;
+    padding-bottom: 1em;
   }
 }
 
@@ -52,6 +83,24 @@
 // media queries
 
 @media only screen and (max-width: 768px) {
+  .whatWeOffer {
+    margin: 3em 1em 0 1em;
+    .whatWeOfferBitim {
+      animation: none;
+    }
+  }
+  .misionBitim {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    img {
+      padding-top: 1em;
+    }
+  }
+  .ourServices {
+    text-align: center;
+    margin: 0em 0em 4em 0em;
+  }
   .carousel-inner {
     height: 100%;
   }
@@ -66,6 +115,17 @@
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+  .misionBitim {
+    display: flex;
+    flex-direction: column;
+    img {
+      padding-top: 1em;
+    }
+  }
+  .ourServices {
+    text-align: center;
+    margin: 3em 3em 6em 3em;
+  }
   .carousel-inner {
     height: 100%;
   }

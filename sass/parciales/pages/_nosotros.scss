@@ -1,3 +1,4 @@
+@import "../animations";
 // seccion nosotros
 .section__usWe {
   display: grid;
@@ -46,7 +47,7 @@
       height: 14em;
       width: auto;
       box-shadow: 0 0.15rem 1.75rem 0 #adb5bd30;
-      animation: employees__item--animation 2s;
+      animation: translateY--animation 2s;
       &:hover {
         box-shadow: 0 0.15rem 1.75rem 0 #adb5bd;
         background: rgba(255, 255, 255, 0.6);
@@ -84,12 +85,6 @@
     }
   }
 }
-
-@keyframes employees__item--animation {
-  0% {
-    transform: translateY(-0.3333333333rem);
-  }
-}
 // media queries
 
 @media only screen and (max-width: 768px) {
@@ -99,12 +94,28 @@
     gap: 3em;
     margin: 4em 3em 0 3em;
     text-align: center;
+    div {
+      h3 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
     img {
       width: 100%;
       height: auto;
+      margin-bottom: 2em;
     }
   }
   .section__team {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    h2 {
+      padding: 1em 1em 0 1em;
+      display: block;
+    }
     .team__employees {
       display: flex;
       justify-content: center;
@@ -128,6 +139,9 @@
     .team__employees {
       display: flex;
       justify-content: center;
+      .employees__item {
+        width: 55%;
+      }
     }
   }
 }

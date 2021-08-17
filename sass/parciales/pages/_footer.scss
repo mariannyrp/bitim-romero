@@ -1,3 +1,4 @@
+@import "../animations";
 .footer {
   background-color: #cfd7f2;
   grid-area: footer;
@@ -52,10 +53,10 @@
           a {
             .iconSocial {
               opacity: 0.6;
+              animation: translateY--animation 2s;
               &:hover {
-                width: 2.7em;
-                height: 2.7em;
                 opacity: 1;
+                transform: translateY(-0.3333333333rem);
               }
             }
           }
@@ -85,7 +86,7 @@
         margin: 1em;
       }
       .footerSocial {
-        margin: 1em;
+        padding: 0;
         h3 {
           display: none;
         }
@@ -121,7 +122,6 @@
         margin: 1em;
       }
       .footerSocial {
-        margin: 1em;
         h3 {
           display: none;
         }

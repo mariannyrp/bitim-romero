@@ -14,3 +14,8 @@
   animation-timing-function: ease-in;
   animation-delay: 0.5s;
 }
+@keyframes translateY--animation {
+  0% {
+    transform: translateY(-0.3333333333rem);
+  }
+}

@@ -15,9 +15,10 @@
       color: #fff;
       border-radius: 0.3em;
       img {
-        opacity: 0.8;
+        opacity: 0.6;
         &:hover {
           opacity: 1;
+          transition: opacity 2s;
         }
       }
       div {
@@ -79,6 +80,16 @@
 // media queries
 
 @media only screen and (max-width: 768px) {
+  .ourProjects {
+    padding: 0;
+    h1 {
+      margin-top: 1em;
+      display: block;
+    }
+    .projects {
+      margin-top: 2em;
+    }
+  }
   .customers {
     h2 {
       font-size: 1.3rem;
